@@ -1,0 +1,40 @@
+{
+	"tileset": "tiles",
+	"grid": [[ 3, 3, 3,17, 8, 8, 8, 8, 8,15],
+			 [22,22,22,23, 8, 8, 8, 8, 8,21],
+			 [ 8, 9,10,10,10,10,10,11, 8, 8],
+			 [ 8,15,16,16,16,16, 3,17, 8, 8],
+			 [ 8,15,16, 3,16,16,16,17, 8, 8],
+			 [11,15,16,27,28,28,29,17, 8, 8],
+			 [17,15, 2,36,42,39,41,17, 8, 8],
+			 [23,21,22,22, 8,22,22,23, 8, 8],
+			 [ 9,10,10,11, 8, 8, 8, 8, 8, 8],
+			 [ 7, 3, 3,17, 8, 8, 8, 8, 8, 9]],
+	"adjacency": ["zone 1", "zone 1", "zone 1", "zone 1"],
+	"tileType": {"walk": [0,1,6,7,8,9,10,11,15,16,17,21,22,23,45,47]},
+	"entities":
+	[
+		{
+			"type": "Entity",
+			"sprite": "blu",
+			"position": {"x": 0, "y": 1},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [true, "walk-down", true, true],
+			"onUse": "function talk() {this.output.setMessage([\"Sup!\"]);}"
+		},
+		{
+			"type": "Entity",
+			"sprite": "clear",
+			"position": {"x": 4, "y": 6},
+			"dimensions": {"width": 1, "height": 1},
+			"onUse": "function look() {this.output.setMessage([\"This is someone's house!\",\"It's locked anyways.\"]);}"
+		},
+		{
+			"type": "Entity",
+			"sprite": "clear",
+			"position": {"x": 5, "y": 6},
+			"dimensions": {"width": 1, "height": 1},
+			"onUse": "function look() {this.output.setMessage([\"There's a bunch of medical supplies\",\"and someone glaring at me with\",\"a shotgun... I should probably leave.\"]);}"
+		}
+	]
+}

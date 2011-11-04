@@ -1,0 +1,28 @@
+{
+	"tileset": "tiles",
+	"grid": [[44,44,44,44,44,44],
+			 [44,44,44,44,44,44],	
+			 [45,45,45,45,45,45],
+			 [45,45,45,45,45,45],
+			 [45,45,45,45,45,45],
+			 [45,45,45,45,45,45],
+			 [45,45,45,45,45,45],
+			 [45,45,46,47,45,45],
+			 [ 5, 5, 5, 5, 5, 5]],
+	"adjacency": [null, null, null, null],
+	"entities":
+	[
+		{
+			"type": "Guy",
+			"sprite": "blu",
+			"position": {"x": 3, "y": 4},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [true, "walk-down", true, true]
+		}
+	],
+	"tileType": {"walk": [0,1,6,7,8,9,10,11,15,16,17,21,22,23,45,47]},
+	"warps":
+	{
+		"door": {"row": 7, "column": 2, "targetMap": "zone 1", "targetWarp": "building"}
+	}
+}

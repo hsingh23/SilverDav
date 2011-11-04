@@ -1,0 +1,166 @@
+{
+	"SpriteSheet":
+	[
+		{
+			"key": "blu",
+			"src": "content/images/ball-sprite-blue.png",
+			"width": 120,
+			"height": 120,
+			"frames": 4,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 10051
+		},
+		{
+			"key": "red",
+			"src": "content/images/ball-sprite-red.png",
+			"width": 120,
+			"height": 120,
+			"frames": 4,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+		{
+			"key": "clear",
+			"src": "content/images/clear.png",
+			"width": 2,
+			"height": 2,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["none"],
+			"bytes": 1
+		},
+		{
+			"key": "dpad-up",
+			"src": "content/images/dpad-up.png",
+			"width": 90,
+			"height": 180,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["off","on"],
+			"bytes": 10615
+		},
+		{
+			"key": "dpad-left",
+			"src": "content/images/dpad-left.png",
+			"width": 75,
+			"height": 200,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["off","on"],
+			"bytes": 11645
+		},
+		{
+			"key": "dpad-down",
+			"src": "content/images/dpad-down.png",
+			"width": 90,
+			"height": 180,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["off","on"],
+			"bytes": 11633
+		},
+		{
+			"key": "dpad-right",
+			"src": "content/images/dpad-right.png",
+			"width": 75,
+			"height": 200,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["off","on"],
+			"bytes": 10792
+		},
+		{
+			"key": "btn-a",
+			"src": "content/images/btn-a.png",
+			"width": 70,
+			"height": 180,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["off","on"],
+			"bytes": 5631
+		},
+		{
+			"key": "btn-b",
+			"src": "content/images/btn-b.png",
+			"width": 70,
+			"height": 180,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["off","on"],
+			"bytes": 5471
+		},
+		{
+			"key": "btn-select",
+			"src": "content/images/btn-select.png",
+			"width": 150,
+			"height": 100,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["off","on"],
+			"bytes": 8231
+		},
+		{
+			"key": "btn-start",
+			"src": "content/images/btn-start.png",
+			"width": 150,
+			"height": 100,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["off","on"],
+			"bytes": 8598
+		}
+	],
+	"Tileset":
+	[
+		{
+			"key": "tiles",
+			"src": "content/images/tileset.png",
+			"width": 180,
+			"height": 240,
+			"tiles": [[ 0, 1, 2, 3, 4, 5],
+					  [ 6, 7, 8, 9,10,11],
+					  [12,13,14,15,16,17],
+					  [18,19,20,21,22,23],
+					  [24,25,26,27,28,29],
+					  [30,31,32,33,34,35],
+					  [36,37,38,39,40,41],
+					  [42,43,44,45,46,47]],
+			"bytes": 15188
+		},
+		{
+			"key": "tiles-invert",
+			"src": "content/images/tileset2.png",
+			"width": 180,
+			"height": 240,
+			"tiles": [[ 0, 1, 2, 3, 4, 5],
+					  [ 6, 7, 8, 9,10,11],
+					  [12,13,14,15,16,17],
+					  [18,19,20,21,22,23],
+					  [24,25,26,27,28,29],
+					  [30,31,32,33,34,35],
+					  [36,37,38,39,40,41],
+					  [42,43,44,45,46,47]],
+			"bytes": 15195
+		}
+	],
+	"Map":
+	[
+		{
+			"key": "zone 1",
+			"src": "content/maps/zone1.json",
+			"bytes": 921
+		},
+		{
+			"key": "zone 2",
+			"src": "content/maps/zone2.json",
+			"bytes": 539
+		},
+		{
+			"key": "building 1",
+			"src": "content/maps/building1.json",
+			"bytes": 746
+		}
+	]
+}
