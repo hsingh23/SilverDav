@@ -32,6 +32,8 @@ Game.prototype = {
 		var callback;
 		callback = wrapper(this, '_setup');
 
+		context.canvas.width = context.canvas.clientWidth;
+		context.canvas.height = context.canvas.clientHeight;
 		this.context = context;
 		this.size = new Size(context.canvas.width, context.canvas.height);
 		
@@ -73,7 +75,7 @@ Game.prototype = {
 		this.input.registerKey(KEY.ESCAPE);
 		this.input.registerKey(KEY.SPACE);
 		this.input.registerKey(KEY.TAB);
-		//this._registerButtons();
+		this._registerButtons();
 		
 		// size of a cell for the viewport
 		var scale = new Size(
@@ -85,8 +87,8 @@ Game.prototype = {
 		this.output = new Output(
 			this.context,
 			new Rectangle(
-				160 * this.context.canvas.width / 480,
-				265 * this.context.canvas.height / 320,
+				1*this.context.canvas.width / 480,
+				1 * this.context.canvas.height / 320,
 				310 * this.context.canvas.width / 480,
 				50 * this.context.canvas.height / 320
 			),
@@ -105,13 +107,11 @@ Game.prototype = {
 		// create the Viewport
 		this.viewport = new Viewport(
 			this.context,
-			new Rectangle(
-				0,
-				0,
-				this.context.canvas.width,
-				this.context.canvas.height
+			new Rectangle(0,0,
+				2*240 * this.context.canvas.width / 480,
+				2*240 * this.context.canvas.height / 320
 			),
-			new Cell(8, 8),
+			new Cell(16, 16),
 			initialMap,
 			new Point(0, 0),
 			pc

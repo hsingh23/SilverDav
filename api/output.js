@@ -46,6 +46,14 @@ Output.prototype = {
 	 * Redraws any 'live' components (things that need to be redrawn every frame)
 	 */
 	draw: function drawOutput() {
+		if (this.isActive()) {
+			this.clear();
+			if (this.showingChoices) {
+				this._drawChoices();
+			} else {
+				this._drawMessages();
+			}
+		}
 	},
 
 	/**

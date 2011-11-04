@@ -55,9 +55,7 @@ Guy.prototype.question1 = {
 	choices: [
 		{label: "An undead sword?", func: undefined},
 		{label: "Sleeping pills?", func: undefined},
-		{label: "Runaway screaming like a litte girl?", func: undefined},
-		{label: "[Invalid option]", func: undefined},
-		{label: "[Don't pick me!]", func: undefined}
+		{label: "Runaway screaming like a litte girl?", func: undefined}
 	]
 };
 

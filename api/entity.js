@@ -1,7 +1,7 @@
 /**
  * @file
  * @author Harry Hsiao - UIUC ACM GameBuilders
- * @version 1.11.04.00
+ * @version 1.11.04.01
  * @license LGPL
  *
  * The Entity represent a game world object and handles
@@ -63,7 +63,7 @@ Entity.prototype = {
 	setup: function setupEntity(descriptor, map, cellSize, loader, output) {
 		var spriteSheet, metric;
 		
-		this.cellSize = cellSize;
+		this.cellSize = new Size(Math.floor(cellSize.width), Math.floor(cellSize.height));
 		
 		if (descriptor.hasOwnProperty('position')) {
 			this.location.point.copy(descriptor.position);
