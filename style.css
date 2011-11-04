@@ -1,9 +1,8 @@
 body {
-	height: 98%;
 	width: 98%;
+	height: 98%;
 	margin: 0;
 	background-color: black;
-	
 }
 #myCanvas {
 	-webkit-user-select: none;
