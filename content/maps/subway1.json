@@ -1,0 +1,61 @@
+{
+	"tileset": "tiles",
+	"grid": [[31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31],
+			 [37,37,37,37,37,42,37,37,42,37,37,37,42,37,42,37,37,37],	
+			 [45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45],
+			 [45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45],
+			 [45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45],
+			 [45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45],
+			 [13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13],
+			 [25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25]],
+	"adjacency": [null, null, "subway2", "subway2"],
+	"entities":
+	[
+		{
+			"type": "Guy",
+			"sprite": "blu",
+			"position": {"x": 4, "y": 4},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [true, "walk-down", true, true]
+		},
+		{
+			"type": "Entity",
+			"sprite": "blu",
+			"position": {"x": 13, "y": 2},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [true, "walk-left", true, true],
+			"onUse": "function talk(user) {this.move(user.facing,'walk');}"
+		},
+		{
+			"type": "Entity",
+			"sprite": "blu",
+			"position": {"x": 11, "y": 2},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [true, "walk-left", true, true],
+			"onUse": "function talk(user) {this.move(user.facing,'walk');}"
+		},
+		{
+			"type": "Entity",
+			"sprite": "blu",
+			"position": {"x": 7, "y": 2},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [true, "walk-left", true, true],
+			"onUse": "function talk(user) {this.move(user.facing,'walk');}"
+		},
+		{
+			"type": "Entity",
+			"sprite": "blu",
+			"position": {"x": 15, "y": 2},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [true, "walk-left", true, true],
+			"onUse": "function talk(user) {this.move(user.facing,'walk');}"
+		}
+	],
+	"tileType": {"walk": [0,1,6,7,8,9,10,11,15,16,17,21,22,23,45,47]},
+	"warps":
+	{
+		"subway-zone1": {"row": 1, "column":  8, "targetMap": "zone 1", "targetWarp": "zone1-subway"},
+		"subway1-subway2": {"row": 1, "column": 12, "targetMap": "subway1", "targetWarp": "subway2-subway1"},
+		"subway2-subway1": {"row": 1, "column": 14, "targetMap": "subway1", "targetWarp": "subway1-subway2"}
+	}
+}

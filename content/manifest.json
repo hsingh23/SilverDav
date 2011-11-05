@@ -218,8 +218,13 @@
 			"bytes": 539
 		},
 		{
-			"key": "building 1",
-			"src": "content/maps/building1.json",
+			"key": "subway1",
+			"src": "content/maps/subway1.json",
+			"bytes": 746
+		},
+		{
+			"key": "subway2",
+			"src": "content/maps/subway2.json",
 			"bytes": 746
 		}
 	]
