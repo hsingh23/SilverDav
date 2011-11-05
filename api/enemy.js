@@ -8,10 +8,10 @@
  * See the guy in the clinic.
  */
 function Enemy(type) {
-	//set the fields based on the type from enemy.json
 	var Enemy = Object.beget(Entity);
 	Enemy.type = type;
 	
+	//set the fields based on the type from enemy.json
 	
 	return Enemy;
 }
