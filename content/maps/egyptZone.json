@@ -48,6 +48,13 @@
 	"tileType": {"walk": [13,25]},
 	"entities":
 	[
+	  {"type": "Entity",
+			"sprite": "yellowkey",
+			"position": {"x": 96, "y": 22},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [false, "none", true, true],
+			"onUse": "function talk(user) {this.output.setMessage([\"'You find the great yellow key:\",\"you pick it up and put it you pocket'\",\"Press the spacebar to continue...'\"]); PC.prototype.getKey(this);}"
+	  }
 	],
 	"warps":
 	{

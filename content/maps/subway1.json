@@ -69,6 +69,6 @@
 		"subway-evilZone": {"row": 1, "column": 2, "targetMap": "evilZone", "targetWarp": "evilZone-subway"},
 		"subway-dystopianZone": {"row": 1, "column": 0, "targetMap": "dystopianZone", "targetWarp": "dystopianZone-subway"},
 		"subway-egyptZone": {"row": 1, "column": 6, "targetMap": "egyptZone", "targetWarp": "egyptZone-subway"},
-		"subway-win": {"row": 1, "column": 6, "targetMap": "winRoom", "targetWarp": "win-subway"}
+		"subway-win": {"row": 6, "column": 7, "targetMap": "winRoom", "targetWarp": "win-subway"}
 	}
 }

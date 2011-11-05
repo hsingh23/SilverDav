@@ -1,6 +1,5 @@
 {
-	"SpriteSheet":
-	[
+	"SpriteSheet": [
 		{
 			"key": "blu",
 			"src": "content/images/ball-sprite-bluetrytwo.svg",
@@ -8,100 +7,90 @@
 			"height": 120,
 			"frames": 4,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 10051
-		},
-		{
+		}, {
 			"key": "red",
 			"src": "content/images/ball-sprite-redtrytwo1.svg",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-		{
+		}, {
 			"key": "player",
 			"src": "content/images/ball-sprite-radeoActive.svg",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-		{
+		}, {
 			"key": "gray",
 			"src": "content/images/ball-sprite-Gray.svg",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-		{
+		}, {
 			"key": "green",
 			"src": "content/images/ball-sprite-Grean.svg",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-		{
+		}, {
 			"key": "mist",
 			"src": "content/images/ball-sprite-mist.svg",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-			{
+		}, {
 			"key": "purple",
 			"src": "content/images/ball-sprite-purple.svg",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-		{
+		}, {
 			"key": "white",
 			"src": "content/images/ball-sprite-white.svg",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-		{
+		}, {
 			"key": "whitefuufyZone",
 			"src": "content/images/ball-sprite-whitefuufyZone.svg",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-			{
+		}, {
 			"key": "alution",
 			"src": "content/images/ball-sprite-alution2.png",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-			{
+		}, {
 			"key": "bluekey",
 			"src": "content/images/bluekey.svg",
 			"width": 32,
@@ -110,8 +99,7 @@
 			"exposure": 0,
 			"animations": ["none"],
 			"bytes": 9791
-		},
-			{
+		}, {
 			"key": "graykey",
 			"src": "content/images/Graykey.svg",
 			"width": 32,
@@ -120,8 +108,7 @@
 			"exposure": 0,
 			"animations": ["none"],
 			"bytes": 9791
-		},
-			{
+		}, {
 			"key": "greenkey",
 			"src": "content/images/Greenkey.svg",
 			"width": 32,
@@ -130,8 +117,7 @@
 			"exposure": 0,
 			"animations": ["none"],
 			"bytes": 9791
-		},
-			{
+		}, {
 			"key": "purplekey",
 			"src": "content/images/Purplekey.svg",
 			"width": 32,
@@ -140,8 +126,7 @@
 			"exposure": 0,
 			"animations": ["none"],
 			"bytes": 9791
-		},
-			{
+		}, {
 			"key": "redkey",
 			"src": "content/images/Redkey.svg",
 			"width": 32,
@@ -150,8 +135,7 @@
 			"exposure": 0,
 			"animations": ["none"],
 			"bytes": 9791
-		},
-			{
+		}, {
 			"key": "wightkey",
 			"src": "content/images/wightKey.svg",
 			"width": 32,
@@ -160,8 +144,7 @@
 			"exposure": 0,
 			"animations": ["none"],
 			"bytes": 9791
-		},
-			{
+		}, {
 			"key": "yellowkey",
 			"src": "content/images/Yellowkey.svg",
 			"width": 32,
@@ -170,8 +153,7 @@
 			"exposure": 0,
 			"animations": ["none"],
 			"bytes": 9791
-		},
-			{
+		}, {
 			"key": "pingPong",
 			"src": "content/images/pingPon.svg",
 			"width": 32,
@@ -180,8 +162,7 @@
 			"exposure": 0,
 			"animations": ["none"],
 			"bytes": 9791
-		},
-		{
+		}, {
 			"key": "clear",
 			"src": "content/images/clear.png",
 			"width": 2,
@@ -190,205 +171,212 @@
 			"exposure": 0,
 			"animations": ["none"],
 			"bytes": 1
-		},
-		{
+		}, {
 			"key": "beamSword",
 			"src": "content/images/beam-sword.png",
 			"width": 30,
 			"height": 120,
 			"frames": 1,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-		{
+		}, {
 			"key": "fireBall",
 			"src": "content/images/fireballsheat.svg",
 			"width": 30,
 			"height": 120,
 			"frames": 1,
 			"exposure": 80,
-			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"animations": ["walk-up", "walk-right", "walk-down", "walk-left"],
 			"bytes": 9791
-		},
-		{
+		}, {
 			"key": "dpad-up",
 			"src": "content/images/dpad-up.png",
 			"width": 90,
 			"height": 180,
 			"frames": 1,
 			"exposure": 0,
-			"animations": ["off","on"],
+			"animations": ["off", "on"],
 			"bytes": 10615
-		},
-		{
+		}, {
 			"key": "dpad-left",
 			"src": "content/images/dpad-left.png",
 			"width": 75,
 			"height": 200,
 			"frames": 1,
 			"exposure": 0,
-			"animations": ["off","on"],
+			"animations": ["off", "on"],
 			"bytes": 11645
-		},
-		{
+		}, {
 			"key": "dpad-down",
 			"src": "content/images/dpad-down.png",
 			"width": 90,
 			"height": 180,
 			"frames": 1,
 			"exposure": 0,
-			"animations": ["off","on"],
+			"animations": ["off", "on"],
 			"bytes": 11633
-		},
-		{
+		}, {
 			"key": "dpad-right",
 			"src": "content/images/dpad-right.png",
 			"width": 75,
 			"height": 200,
 			"frames": 1,
 			"exposure": 0,
-			"animations": ["off","on"],
+			"animations": ["off", "on"],
 			"bytes": 10792
-		},
-		{
+		}, {
 			"key": "btn-a",
 			"src": "content/images/btn-a.png",
 			"width": 70,
 			"height": 180,
 			"frames": 1,
 			"exposure": 0,
-			"animations": ["off","on"],
+			"animations": ["off", "on"],
 			"bytes": 5631
-		},
-		{
+		}, {
 			"key": "btn-b",
 			"src": "content/images/btn-b.png",
 			"width": 70,
 			"height": 180,
 			"frames": 1,
 			"exposure": 0,
-			"animations": ["off","on"],
+			"animations": ["off", "on"],
 			"bytes": 5471
-		},
-		{
+		}, {
 			"key": "btn-select",
 			"src": "content/images/btn-select.png",
 			"width": 150,
 			"height": 100,
 			"frames": 1,
 			"exposure": 0,
-			"animations": ["off","on"],
+			"animations": ["off", "on"],
 			"bytes": 8231
-		},
-		{
+		}, {
 			"key": "btn-start",
 			"src": "content/images/btn-start.png",
 			"width": 150,
 			"height": 100,
 			"frames": 1,
 			"exposure": 0,
-			"animations": ["off","on"],
+			"animations": ["off", "on"],
 			"bytes": 8598
 		}
 	],
-	"Tileset":
-	[
+	"Tileset": [
 		{
 			"key": "tiles",
 			"src": "content/images/tileset.png",
 			"width": 180,
 			"height": 240,
-			"tiles": [[ 0, 1, 2, 3, 4, 5],
-					  [ 6, 7, 8, 9,10,11],
-					  [12,13,14,15,16,17],
-					  [18,19,20,21,22,23],
-					  [24,25,26,27,28,29],
-					  [30,31,32,33,34,35],
-					  [36,37,38,39,40,41],
-					  [42,43,44,45,46,47]],
+			"tiles": [[0, 1, 2, 3, 4, 5],
+				[6, 7, 8, 9, 10, 11],
+				[12, 13, 14, 15, 16, 17],
+				[18, 19, 20, 21, 22, 23],
+				[24, 25, 26, 27, 28, 29],
+				[30, 31, 32, 33, 34, 35],
+				[36, 37, 38, 39, 40, 41],
+				[42, 43, 44, 45, 46, 47]
+			],
 			"bytes": 15188
-		},
-		{
+		}, {
+			"key": "pirate",
+			"src": "content/images/t6.png",
+			"width": 512,
+			"height": 512,
+			"tiles": [
+				[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+				[17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
+				[53, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48],
+				[49, 52, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64],
+				[65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80],
+				[81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96],
+				[97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112],
+				[113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128],
+				[129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144],
+				[145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160],
+				[161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176],
+				[177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192],
+				[193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208],
+				[209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224],
+				[225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240],
+				[241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256]
+			]
+		}, {
 			"key": "Etiles",
 			"src": "content/images/eAndMOre.png",
 			"width": 210,
 			"height": 210,
-			"tiles": [[ 0, 1, 4, 7, 9, 10,13],
-					  [ 2, 3, 6, 8,11,12,14],
-					  [15,16,17,18,21,22,25],
-					  [68,19,19,20,23,24,96],
-					  [27,28,26,27,28,29,99],
-					  [29,30,31,32,33,34,98],
-					  [36,37,38,34,35,36,97]],
+			"tiles": [[0, 1, 4, 7, 9, 10, 13],
+				[2, 3, 6, 8, 11, 12, 14],
+				[15, 16, 17, 18, 21, 22, 25],
+				[68, 19, 19, 20, 23, 24, 96],
+				[27, 28, 26, 27, 28, 29, 99],
+				[29, 30, 31, 32, 33, 34, 98],
+				[36, 37, 38, 34, 35, 36, 97]
+			],
 			"bytes": 15188
-		},
-		{
+		}, {
 			"key": "tiles-invert",
 			"src": "content/images/tileset2.png",
 			"width": 180,
 			"height": 240,
-			"tiles": [[ 0, 1, 2, 3, 4, 5],
-					  [ 6, 7, 8, 9,10,11],
-					  [12,13,14,15,16,17],
-					  [18,19,20,21,22,23],
-					  [24,25,26,27,28,29],
-					  [30,31,32,33,34,35],
-					  [36,37,38,39,40,41],
-					  [42,43,44,45,46,47]],
+			"tiles": [[0, 1, 2, 3, 4, 5],
+				[6, 7, 8, 9, 10, 11],
+				[12, 13, 14, 15, 16, 17],
+				[18, 19, 20, 21, 22, 23],
+				[24, 25, 26, 27, 28, 29],
+				[30, 31, 32, 33, 34, 35],
+				[36, 37, 38, 39, 40, 41],
+				[42, 43, 44, 45, 46, 47]
+			],
 			"bytes": 15195
 		}
 	],
-	"Map":
-	[
+	"Map": [
 		{
 			"key": "zone 1",
 			"src": "content/maps/zone1.json",
 			"bytes": 921
-		},
-		{
+		}, {
 			"key": "zone 2",
 			"src": "content/maps/zone2.json",
 			"bytes": 539
-		},
-		{
+		}, {
 			"key": "subway1",
 			"src": "content/maps/subway1.json",
 			"bytes": 746
-		},
-		{
+		}, {
 			"key": "subway2",
 			"src": "content/maps/subway2.json",
 			"bytes": 746
-		},
-		{
+		}, {
 			"key": "fireZone",
 			"src": "content/maps/fireZone.json",
 			"bytes": 746
-		},
-		{
+		}, {
 			"key": "forestZone",
 			"src": "content/maps/forestZone.json",
 			"bytes": 746
-		},
-		{
+		}, {
 			"key": "islandZone",
 			"src": "content/maps/islandZone.json",
 			"bytes": 746
-		},
-		{
+		}, {
 			"key": "evilZone",
 			"src": "content/maps/evilZone.json",
 			"bytes": 746
-		},
-		{
+		}, {
 			"key": "egyptZone",
 			"src": "content/maps/egyptZone.json",
 			"bytes": 746
-		},
-		{
+		}, {
 			"key": "dystopianZone",
 			"src": "content/maps/dystopianZone.json",
+			"bytes": 746
+		}, {
+			"key": "winRoom",
+			"src": "content/maps/building1.json",
 			"bytes": 746
 		}
 	]
