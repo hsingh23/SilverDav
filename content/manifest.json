@@ -71,6 +71,26 @@
 			"animations": ["walk-up","walk-right","walk-down","walk-left"],
 			"bytes": 9791
 		},
+		{
+			"key": "white",
+			"src": "content/images/ball-sprite-white.svg",
+			"width": 120,
+			"height": 120,
+			"frames": 4,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+		{
+			"key": "whitefuufyZone",
+			"src": "content/images/ball-sprite-whitefuufyZone.svg",
+			"width": 120,
+			"height": 120,
+			"frames": 4,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
 			{
 			"key": "alution",
 			"src": "content/images/ball-sprite-alution2.png",
@@ -79,6 +99,86 @@
 			"frames": 4,
 			"exposure": 80,
 			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+			{
+			"key": "bluekey",
+			"src": "content/images/bluekey.svg",
+			"width": 32,
+			"height": 32,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["none"],
+			"bytes": 9791
+		},
+			{
+			"key": "graykey",
+			"src": "content/images/Graykey.svg",
+			"width": 32,
+			"height": 32,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["none"],
+			"bytes": 9791
+		},
+			{
+			"key": "greenkey",
+			"src": "content/images/Greenkey.svg",
+			"width": 32,
+			"height": 32,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["none"],
+			"bytes": 9791
+		},
+			{
+			"key": "purplekey",
+			"src": "content/images/Purplekey.svg",
+			"width": 32,
+			"height": 32,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["none"],
+			"bytes": 9791
+		},
+			{
+			"key": "redkey",
+			"src": "content/images/Redkey.svg",
+			"width": 32,
+			"height": 32,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["none"],
+			"bytes": 9791
+		},
+			{
+			"key": "wightkey",
+			"src": "content/images/wightKey.svg",
+			"width": 32,
+			"height": 32,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["none"],
+			"bytes": 9791
+		},
+			{
+			"key": "yellowkey",
+			"src": "content/images/Yellowkey.svg",
+			"width": 32,
+			"height": 32,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["none"],
+			"bytes": 9791
+		},
+			{
+			"key": "pingPong",
+			"src": "content/images/pingPon.svg",
+			"width": 32,
+			"height": 32,
+			"frames": 1,
+			"exposure": 0,
+			"animations": ["none"],
 			"bytes": 9791
 		},
 		{
