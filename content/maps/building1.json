@@ -23,7 +23,6 @@
 	"warps":
 	{
 		"subway-zone1": {"row": 1, "column":  8, "targetMap": "zone 1", "targetWarp": "zone1-subway"},
-		"subway-zone2": {"row": 1, "column": 10, "targetMap": "zone 2", "targetWarp": "zone2-subway"},
 		"subway1-subway2": {"row": 1, "column": 12, "targetMap": "building 1", "targetWarp": "subway2-subway1"},
 		"subway2-subway1": {"row": 1, "column": 14, "targetMap": "building 1", "targetWarp": "subway1-subway2"}
 	}

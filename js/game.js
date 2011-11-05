@@ -109,7 +109,7 @@ Game.prototype = {
 		var initialMap = this.contentLoader.getContent('Map', 'zone 1');
 		
 		// create a new Player Character
-		var pc = new PC({"sprite": "red", "position": {x:2, y:5}}, initialMap, scale, this.contentLoader, this.input);
+		var pc = new PC({"sprite": "red", "position": {x:7, y:10}}, initialMap, scale, this.contentLoader, this.input);
 		
 		// create the Viewport
 		this.viewport = new Viewport(
