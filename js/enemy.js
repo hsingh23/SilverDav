@@ -7,7 +7,8 @@
  * An example Entity derived character.
  * See the guy in the clinic.
  */
-function Enemy(name) {
+function Enemy() {
+	name = "wolf";
 	var Enemy = Object.beget(Entity);
 	Enemy.name = name;
 	
@@ -15,12 +16,12 @@ function Enemy(name) {
 	JsonNode = new JsonFile({src:"content/enemies.json"}, null, false);
 	
 	Enemy.key = JsonNode.info[name].key;
-	Enemy.attack = JsonNode[name].attack;
-	Enemy.speed = JsonNode[name].statistics.speed;
-	Enemy.strength = JsonNode[name].statistics.strength;
-	Enemy.dexterity = JsonNode[name].statistics.dexterity;
-	Enemy.intelligence = JsonNode[name].statistics.intelligence;
-	Enemy.stamina = JsonNode[name].statistics.stamina;
+	Enemy.attack = JsonNode.info[name].attack;
+	Enemy.speed = JsonNode.info[name].statistics.speed;
+	Enemy.strength = JsonNode.info[name].statistics.strength;
+	Enemy.dexterity = JsonNode.info[name].statistics.dexterity;
+	Enemy.intelligence = JsonNode.info[name].statistics.intelligence;
+	Enemy.stamina = JsonNode.info[name].statistics.stamina;
 	
 	return Enemy;
 }
