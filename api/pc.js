@@ -38,7 +38,7 @@ PC.prototype.update = function updatePC(elapsedTime) {
 		this.move(this.DIRECTION.LEFT, 'walk', true);
 	} else if(this.input.isKeyDown(KEY.D) || this.input.isButtonDown(this.input.BUTTON.RIGHT)) {
 		this.move(this.DIRECTION.RIGHT, 'walk', true);
-	} else if(this.input.isKeyDown(KEY.ARROW_UP)) {
+	} else if(this.input.isKeyDown(KEY.ARROW_UP)) {l
 		this.attack(this.DIRECTION.UP, 'walk', true);
 	} else if(this.input.isKeyDown(KEY.ARROW_DOWN)) {
 		this.attack(this.DIRECTION.DOWN, 'walk', true);
@@ -59,12 +59,14 @@ PC.prototype.update = function updatePC(elapsedTime) {
 	}
 else if (this.input.isKeyDown(KEY[4]) || this.input.isButtonDown(this.input.BUTTON.RIGHT)) {
 		this.move(this.DIRECTION.RIGHT, 'walk', true);
+		console.log("log is working");
 	}
 	
 
 	// Basic action
 	if(this.input.isButtonPressed(this.input.BUTTON.A) || this.input.isKeyPressed(KEY.SPACE)) {
-		this.use();
+		this.use(); 
+		console.log("use is being called stage1");
 	}
 
 	// Check for warping on entering a tile
@@ -97,7 +99,7 @@ PC.prototype.use = function use() {
 	if(this.facing === this.DIRECTION.NONE) {
 		return;
 	}
-
+ console.log("use is being called 2");
 	front.x = Math.round(this.location.point.x);
 	front.y = Math.round(this.location.point.y);
 	front[this.facing.axis] += this.facing.sign;
