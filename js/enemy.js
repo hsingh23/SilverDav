@@ -23,16 +23,15 @@ function Enemy() {
 	Enemy.intelligence = JsonNode.info[name].statistics.intelligence;
 	Enemy.stamina = JsonNode.info[name].statistics.stamina;
 	
-	return Enemy;
+	return this;
 }
 
 Enemy.prototype = new Entity();
 
 Enemy.prototype._setupBase = Enemy.prototype.setup;
 Enemy.prototype.setup = function setupEnemy(descriptor, map, cellSize, loader, output) {
-
-}
-
+	this._setupBase(descriptor, map, cellSize, loader, output);
+};
 //some mode of detection is required
 
 //then the enemy chases the player

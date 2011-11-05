@@ -184,6 +184,7 @@ Entity.prototype = {
 		}
 		this.facing = direction;if(direction === this.DIRECTION.NONE) {
 			return;
+		}
 		this.sprite.playAnimation("walk" + direction.name, false, true);
 		this.sprite.stopAnimation(true);
 
@@ -196,7 +197,7 @@ Entity.prototype = {
 		if(map.checkHasEntity(row, column) !== null) {
 			return;
 		}
-		Sprite
+		//Sprite
 		this.targetData = targetType.data;
 		this.sprite.playAnimation(undefined, false, true);
 
