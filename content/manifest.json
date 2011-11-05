@@ -102,6 +102,16 @@
 			"bytes": 9791
 		},
 		{
+			"key": "fireBall",
+			"src": "content/images/fireballsheat.svg",
+			"width": 30,
+			"height": 120,
+			"frames": 1,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+		{
 			"key": "dpad-up",
 			"src": "content/images/dpad-up.png",
 			"width": 90,
