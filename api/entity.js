@@ -148,6 +148,46 @@ Entity.prototype = {
 			this.sprite.playAnimation(undefined, false, true);
 		}
 	},
+	
+	/**
+	 * Set the entity's state to move one tile in a given direction.
+	 *
+	 * @param direction <this.DIRECTION> The direction to move.
+	 * @param mode <string> The type of movement. Should be the first part of the
+	 *     movement animation name (eg animation:'walk-left' then mode:'walk')
+	 */
+	
+	attack: function attackEntity(direction) {
+		var targetType, map, row, column, canMove, hasWarp;
+
+		this.facing = direction;
+		this.sprite.playAnimation(mode + direction.name, false, true);
+		this.sprite.stopAnimation(true);
+
+		this.target.copy(this.location.point);
+		this.target[direction.axis] += direction.sign;		
+
+		targetType = this.map.getTile(Math.floor(this.target.y), Math.floor(this.target.x));
+		
+		if (this.map.tileType === null) { return; }
+		if (!this.map.tileType.hasOwnProperty(mode)) { return; }
+		if (targetType === undefined) { return; }
+		if (vagrant !== true && this.map !== targetType.data.map) { return; }
+		
+		map = targetType.data.map;
+		row = targetType.data.row;
+		column = targetType.data.column;
+		if (map.checkHasEntity(row, column) !== null) { return; }
+		
+		canMove = this.map.tileType[mode].indexOf(targetType.tile) >= 0;
+		canMove = canMove || (vagrant === true && map.getWarpTarget(row, column) !== undefined);
+
+		if (canMove) {
+			this.movement = direction;
+			this.targetData = targetType.data;
+			this.sprite.playAnimation(undefined, false, true);
+		}
+	},
 
 	/**
 	 * Updates the entity's state and animation.
