@@ -12,9 +12,9 @@ function Enemy(name) {
 	Enemy.name = name;
 	
 	//set the fields based on the name from enemy.json
-	JsonNode = new JsonFile({"\content\enemies.json"}, null, true);
+	JsonNode = new JsonFile({src:"content/enemies.json"}, null, false);
 	
-	Enemy.key = JsonNode[name].key;
+	Enemy.key = JsonNode.info[name].key;
 	Enemy.attack = JsonNode[name].attack;
 	Enemy.speed = JsonNode[name].statistics.speed;
 	Enemy.strength = JsonNode[name].statistics.strength;
@@ -25,7 +25,12 @@ function Enemy(name) {
 	return Enemy;
 }
 
+Enemy.prototype = new Entity();
 
+Enemy.prototype._setupBase = Enemy.prototype.setup;
+Enemy.prototype.setup = function setupEnemy(descriptor, map, cellSize, loader, output) {
+
+}
 
 //some mode of detection is required
 
@@ -34,8 +39,8 @@ function Enemy(name) {
 //then the enemy attempts to hit the player
 
 //if hit the enemy is destroyed
-function destroy(){
-	this.delete;
+function destroy(entity){
+	entity.delete;
 }
 
 
