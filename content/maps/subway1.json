@@ -56,6 +56,7 @@
 	{
 		"subway-zone1": {"row": 1, "column":  8, "targetMap": "zone 1", "targetWarp": "zone1-subway"},
 		"subway1-subway2": {"row": 1, "column": 12, "targetMap": "subway1", "targetWarp": "subway2-subway1"},
-		"subway2-subway1": {"row": 1, "column": 14, "targetMap": "subway1", "targetWarp": "subway1-subway2"}
+		"subway2-subway1": {"row": 1, "column": 14, "targetMap": "subway1", "targetWarp": "subway1-subway2"},
+		"subway-forestZone": {"row": 1, "column": 4, "targetMap": "forestZone", "targetWarp": "forestZone-subway"}
 	}
 }
