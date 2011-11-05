@@ -93,7 +93,7 @@
 		},
 		{
 			"key": "beamSword",
-			"src": "content/images/beam-sword.svg",
+			"src": "content/images/beam-sword.png",
 			"width": 30,
 			"height": 120,
 			"frames": 1,
