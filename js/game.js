@@ -8,11 +8,11 @@
  */
 // You can require your files here.
 require('js/guy.js');
-<<<<<<< HEAD
+
 require('js/stab.js');
-=======
+
 require('js/enemy.js');
->>>>>>> 8984415f3b9ed0773696d827745793a1c8a445dc
+
 
 function Game(context, manifestPath) {
 	this._load(context, manifestPath);

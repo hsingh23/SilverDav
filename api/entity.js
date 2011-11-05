@@ -182,7 +182,8 @@ Entity.prototype = {
 		if(direction === this.DIRECTION.NONE) {
 			return;
 		}
-		this.facing = direction;
+		this.facing = direction;if(direction === this.DIRECTION.NONE) {
+			return;
 		this.sprite.playAnimation("walk" + direction.name, false, true);
 		this.sprite.stopAnimation(true);
 
