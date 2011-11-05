@@ -46,6 +46,7 @@ Entity.prototype = {
 		NONE: null
 		},
 	movement: null,
+	attacking: null,
 	facing: null,
 	target: null,
 	targetData: null,
@@ -114,13 +115,13 @@ Entity.prototype = {
 	move: function moveEntity(direction, mode, vagrant) {
 		var targetType, map, row, column, canMove, hasWarp;
 
-		//already moving
+		//already moving or attacking
+		if (this.attacking !== this.DIRECTION.NONE) { return; }
 		if (this.movement !== this.DIRECTION.NONE) { return; }
 
 		//don't move
 		if (direction === this.DIRECTION.NONE) { return; }
 
-		this.facing = direction;
 		this.sprite.playAnimation(mode + direction.name, false, true);
 		this.sprite.stopAnimation(true);
 
@@ -147,6 +148,26 @@ Entity.prototype = {
 			this.targetData = targetType.data;
 			this.sprite.playAnimation(undefined, false, true);
 		}
+	},
+	
+	/**
+	 * Set the entity's state to move one tile in a given direction.
+	 *
+	 * @param direction <this.DIRECTION> The direction to move.
+	 * @param mode <string> The type of movement. Should be the first part of the
+	 *     movement animation name (eg animation:'walk-left' then mode:'walk')
+	 */
+	attack: function attackEntity(direction, type) {
+		var targetType, map, row, column, canMove, hasWarp;
+
+		//already moving or attacking
+		if (this.attacking !== this.DIRECTION.NONE) { return; }
+		if (this.movement !== this.DIRECTION.NONE) { return; }
+
+
+		this.facing = direction;
+		this.sprite.playAnimation(mode + direction.name, false, true); //check this
+		this.sprite.stopAnimation(true);
 	},
 
 	/**
