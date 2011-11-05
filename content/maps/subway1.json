@@ -20,7 +20,7 @@
 		},
 		{
 			"type": "Entity",
-			"sprite": "blu",
+			"sprite": "red",
 			"position": {"x": 13, "y": 2},
 			"dimensions": {"width": 1, "height": 1},
 			"animation": [true, "walk-left", true, true],
@@ -28,7 +28,7 @@
 		},
 		{
 			"type": "Entity",
-			"sprite": "blu",
+			"sprite": "gray",
 			"position": {"x": 11, "y": 2},
 			"dimensions": {"width": 1, "height": 1},
 			"animation": [true, "walk-left", true, true],
@@ -36,7 +36,7 @@
 		},
 		{
 			"type": "Entity",
-			"sprite": "blu",
+			"sprite": "purple",
 			"position": {"x": 7, "y": 2},
 			"dimensions": {"width": 1, "height": 1},
 			"animation": [true, "walk-left", true, true],
@@ -44,7 +44,7 @@
 		},
 		{
 			"type": "Entity",
-			"sprite": "blu",
+			"sprite": "alution",
 			"position": {"x": 15, "y": 2},
 			"dimensions": {"width": 1, "height": 1},
 			"animation": [true, "walk-left", true, true],
