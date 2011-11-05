@@ -8,7 +8,11 @@
  */
 // You can require your files here.
 require('js/guy.js');
+<<<<<<< HEAD
 require('js/stab.js');
+=======
+require('js/enemy.js');
+>>>>>>> 8984415f3b9ed0773696d827745793a1c8a445dc
 
 function Game(context, manifestPath) {
 	this._load(context, manifestPath);
@@ -100,9 +104,7 @@ Game.prototype = {
 	    this.input.registerKey(KEY[1]);
 	    this.input.registerKey(KEY[2]);
 	    this.input.registerKey(KEY[3]);
-	     this.input.registerKey(KEY[4]);
-	     
-		this._registerButtons();
+	    this.input.registerKey(KEY[4]);
 		
 		// size of a cell for the viewport
 		var scale = new Size(
@@ -187,102 +189,5 @@ Game.prototype = {
 		this._draw();
 		
 		setWrappedTimeout(this, '_run', 0);
-	},
-
-	/**
-	 * Create the UI buttons.
-	 */
-	_registerButtons: function registerButtons() {
-		var width, height, rectangle, sprite;
-		width = this.context.canvas.width;
-		height = this.context.canvas.height;
-		this._registerDpad(0, Math.round(3 * height / 32));
-		
-		rectangle = new Rectangle(0, 0, 0, 0);
-		rectangle.size.width = Math.round(15 * width / 48);
-		rectangle.size.height = Math.round(15 * height / 96);
-		rectangle.point.y = height - rectangle.size.height;
-		sprite = this.contentLoader.getContent('SpriteSheet', 'btn-start')
-		this.input.registerButton('START', sprite, rectangle);
-		
-		rectangle.point.y -= rectangle.size.height;
-		sprite = this.contentLoader.getContent('SpriteSheet', 'btn-select')
-		this.input.registerButton('SELECT', sprite, rectangle);
-		
-		rectangle.size.width = Math.round(7 * width / 48);
-		rectangle.size.height = Math.round(9 * height / 32);
-		rectangle.point.x = width - rectangle.size.width;
-		rectangle.point.y = Math.round(3 * height / 32);
-		sprite = this.contentLoader.getContent('SpriteSheet', 'btn-a')
-		this.input.registerButton('A', sprite, rectangle);
-		
-		rectangle.point.y = Math.round(14 * height / 32);
-		sprite = this.contentLoader.getContent('SpriteSheet', 'btn-b')
-		this.input.registerButton('B', sprite, rectangle);
-	},
-	
-	/**
-	 * Sets up a virtual d-pad on screen.
-	 *
-	 * @param x,y <number> The canvas coordinates of the d-pad.
-	 */
-	_registerDpad: function registerDpad(x, y) {
-		var width, height, rectangle, sprite, formula;
-		width = this.context.canvas.width;
-		height = this.context.canvas.height;
-		
-		rectangle = new Rectangle(x, y, 0, 0);
-		rectangle.size.width = Math.round(3 * width / 16);
-		rectangle.size.height = Math.round(9 * height / 32);
-		rectangle.point.x += Math.round(width / 16);
-		sprite = this.contentLoader.getContent('SpriteSheet', 'dpad-up');
-		formula = function (rect, point) {
-			var x = point.x - rect.point.x,
-				y = point.y - rect.point.y,
-				rise = rect.size.height / 3,
-				run = rect.size.width / 2;
-			x = (x * rise / run) - rise;
-			return (y < x + rect.size.height) && (y < -x + rect.size.height);
-		};
-		this.input.registerButton('UP', sprite, rectangle, formula, true);
-		
-		rectangle.point.y += rectangle.size.height;
-		sprite = this.contentLoader.getContent('SpriteSheet', 'dpad-down');
-		formula = function (rect, point) {
-			var x = point.x - rect.point.x,
-				y = point.y - rect.point.y,
-				rise = rect.size.height / 3,
-				run = rect.size.width / 2;
-			x *= rise / run;
-			return (y > x - rise) && (y > -x + rise);
-		};
-		this.input.registerButton('DOWN', sprite, rectangle, formula, true);
-		
-		rectangle.point.x = x;
-		rectangle.point.y = y + Math.round(height / 8);
-		rectangle.size.width = Math.round(5 * width / 32);
-		rectangle.size.height = Math.round(5 * height / 16);
-		sprite = this.contentLoader.getContent('SpriteSheet', 'dpad-left');
-		formula = function (rect, point) {
-			var x = point.x - rect.point.x,
-				y = point.y - rect.point.y,
-				rise = rect.size.height / 2,
-				run = rect.size.width * 4 / 15;
-			x = (x - rect.size.width) * rise / run;
-			return (y > x + rise) && (y < -x + rise);
-		};
-		this.input.registerButton('LEFT', sprite, rectangle, formula, true);
-		
-		rectangle.point.x += rectangle.size.width;
-		sprite = this.contentLoader.getContent('SpriteSheet', 'dpad-right');
-		formula = function (rect, point) {
-			var x = point.x - rect.point.x,
-				y = point.y - rect.point.y,
-				rise = rect.size.height / 2,
-				run = rect.size.width * 4 / 15;
-			x *= rise / run;
-			return (y < x + rise) && (y > -x + rise);
-		};
-		this.input.registerButton('RIGHT', sprite, rectangle, formula, true);
 	}
 };

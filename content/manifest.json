@@ -42,7 +42,7 @@
 			"bytes": 9791
 		},
 		{
-			"key": "grean",
+			"key": "green",
 			"src": "content/images/ball-sprite-Grean.svg",
 			"width": 120,
 			"height": 120,
@@ -90,6 +90,26 @@
 			"exposure": 0,
 			"animations": ["none"],
 			"bytes": 1
+		},
+		{
+			"key": "beamSword",
+			"src": "content/images/beam-sword.png",
+			"width": 30,
+			"height": 120,
+			"frames": 1,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+		{
+			"key": "fireBall",
+			"src": "content/images/fireballsheat.svg",
+			"width": 30,
+			"height": 120,
+			"frames": 1,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
 		},
 		{
 			"key": "dpad-up",

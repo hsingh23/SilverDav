@@ -7,11 +7,19 @@
  * An example Entity derived character.
  * See the guy in the clinic.
  */
-function Enemy(type) {
+function Enemy(name) {
 	var Enemy = Object.beget(Entity);
-	Enemy.type = type;
+	Enemy.name = name;
 	
-	//set the fields based on the type from enemy.json
+	//set the fields based on the name from enemy.json
+	JsonNode = JsonFile({"\\content\\enemies.json"}, null, true);
+	Enemy.key = JsonNode[name].key;
+	Enemy.attack = JsonNode[name].attack;
+	Enemy.speed = JsonNode[name].statistics.speed;
+	Enemy.strength = JsonNode[name].statistics.strength;
+	Enemy.dexterity = JsonNode[name].statistics.dexterity;
+	Enemy.intelligence = JsonNode[name].statistics.intelligence;
+	Enemy.stamina = JsonNode[name].statistics.stamina;
 	
 	return Enemy;
 }
@@ -25,6 +33,10 @@ function Enemy(type) {
 //then the enemy attempts to hit the player
 
 //if hit the enemy is destroyed
+function destroy(){
+	this.delete;
+}
+
 
 if (typeof Object.beget !== 'function') {
     Object.beget = function (o) {

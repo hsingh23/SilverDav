@@ -9,5 +9,15 @@
 			 [13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13],
 			 [25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25]],
 	"adjacency": [null, null, "subway1", "subway1"],
-	"tileType": {"walk": [0,1,6,7,8,9,10,11,15,16,17,21,22,23,45,47]}
+	"tileType": {"walk": [0,1,6,7,8,9,10,11,15,16,17,21,22,23,45,47]},
+	"entities":
+	[
+		{
+			"type": "Enemy",
+			"sprite": "blu",
+			"position": {"x": 4, "y": 4},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [true, "walk-down", true, true]
+		}
+	]
 }
