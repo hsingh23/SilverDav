@@ -27,6 +27,7 @@ PC.prototype.update = function updatePC(elapsedTime) {
 	var stopped;
 	
 	// Basic movement controls - feel free to change
+
 	if (this.input.isKeyDown(KEY.W) || this.input.isButtonDown(this.input.BUTTON.UP)) {
 		this.move(this.DIRECTION.UP, 'walk', true);
 	} else if (this.input.isKeyDown(KEY.S) || this.input.isButtonDown(this.input.BUTTON.DOWN)) {
@@ -36,6 +37,18 @@ PC.prototype.update = function updatePC(elapsedTime) {
 	} else if (this.input.isKeyDown(KEY.D) || this.input.isButtonDown(this.input.BUTTON.RIGHT)) {
 		this.move(this.DIRECTION.RIGHT, 'walk', true);
 	}
+	else if (this.input.isKeyDown(KEY[1]) || this.input.isButtonDown(this.input.BUTTON.RIGHT)) {
+		this.move(this.DIRECTION.RIGHT, 'walk', true);
+	}
+		else if (this.input.isKeyDown(KEY[2]) || this.input.isButtonDown(this.input.BUTTON.RIGHT)) {
+		this.move(this.DIRECTION.RIGHT, 'walk', true);
+	}
+	else if (this.input.isKeyDown(KEY[3]) || this.input.isButtonDown(this.input.BUTTON.RIGHT)) {
+		this.move(this.DIRECTION.RIGHT, 'walk', true);
+	}
+
+	
+	
 	
 	// Basic action
 	if (this.input.isButtonPressed(this.input.BUTTON.A) || this.input.isKeyPressed(KEY.SPACE)) {

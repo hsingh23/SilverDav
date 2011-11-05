@@ -75,6 +75,12 @@ Game.prototype = {
 		this.input.registerKey(KEY.ESCAPE);
 		this.input.registerKey(KEY.SPACE);
 		this.input.registerKey(KEY.TAB);
+		this.input.registerKey(KEY.E);
+	    this.input.registerKey(KEY.Q);
+	    this.input.registerKey(KEY[1]);
+	    this.input.registerKey(KEY[2]);
+	    this.input.registerKey(KEY[3]);
+	   
 		this._registerButtons();
 		
 		// size of a cell for the viewport
