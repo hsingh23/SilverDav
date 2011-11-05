@@ -38,7 +38,7 @@ PC.prototype.update = function updatePC(elapsedTime) {
 		this.move(this.DIRECTION.LEFT, 'walk', true);
 	} else if(this.input.isKeyDown(KEY.D) || this.input.isButtonDown(this.input.BUTTON.RIGHT)) {
 		this.move(this.DIRECTION.RIGHT, 'walk', true);
-	} else if(this.input.isKeyDown(KEY.ARROW_UP)) {l
+	} else if(this.input.isKeyDown(KEY.ARROW_UP)) {
 		this.attack(this.DIRECTION.UP, 'walk', true);
 	} else if(this.input.isKeyDown(KEY.ARROW_DOWN)) {
 		this.attack(this.DIRECTION.DOWN, 'walk', true);

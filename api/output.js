@@ -24,6 +24,7 @@ function Output(context, rectangle, input) {
 
 	this.messages = [];
 	this.choices = [];
+	play_multi_sound('multiaudio1');
 }
 
 Output.prototype = {
@@ -134,6 +135,7 @@ Output.prototype = {
 		if (this.input.isKeyPressed(KEY.ESCAPE) || this.input.isButtonPressed(this.input.BUTTON.B)) {
 			if (this.messages.length === 0) {
 				this.clearMessages();
+				play_multi_sound('multiaudio1');
 				return;
 			}
 			this.showingChoices = false;
