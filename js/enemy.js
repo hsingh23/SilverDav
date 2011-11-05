@@ -12,7 +12,8 @@ function Enemy(name) {
 	Enemy.name = name;
 	
 	//set the fields based on the name from enemy.json
-	JsonNode = JsonFile({"\\content\\enemies.json"}, null, true);
+	JsonNode = new JsonFile({"\content\enemies.json"}, null, true);
+	
 	Enemy.key = JsonNode[name].key;
 	Enemy.attack = JsonNode[name].attack;
 	Enemy.speed = JsonNode[name].statistics.speed;

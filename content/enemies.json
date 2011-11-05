@@ -1,34 +1,30 @@
 {
-	"enemies":
-	[
+	"wolf": 
+	{
+		"key":"gray",
+		"attack":"punch",
+		"statistics":
 		{
-			"name":"wolf",
-			"key":"gray",
-			"attack":"punch",
-			"statistics":
-			{
-				"speed":3,
-				"strength":2,
-				"dexterity":4,
-				"intelligence":1,
-				"stamina":2,
-			},
-		},
-		
-		{
-			"name":"bear",
-			"key":"gray",
-			"attack":"punch",
-			"statistics":
-			{
-				"speed":1,
-				"strength":4,
-				"dexterity":5,
-				"intelligence":1,
-				"stamina":1,
-			},
+			"speed":3,
+			"strength":2,
+			"dexterity":4,
+			"intelligence":1,
+			"stamina":2
 		}
+	},
 	
-	
-	]
+	"bear":
+	{
+		"key":"gray",
+		"attack":"punch",
+		"statistics":
+		{
+			"speed":1,
+			"strength":4,
+			"dexterity":5,
+			"intelligence":1,
+			"stamina":1
+		}
+	}
+
 }
