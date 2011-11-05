@@ -88,6 +88,8 @@ else if (this.input.isKeyDown(KEY[4]) || this.input.isButtonDown(this.input.BUTT
  * Transports the PC through a warp
  */
 PC.prototype._transitionAndWarp = function transitionAndWarp() {
+	//reset local enemies
+	var localEnemies = [];
 	var warp, cell;
 	this.map = this.targetData.map;
 	this.location.point.set(this.targetData.column, this.targetData.row);

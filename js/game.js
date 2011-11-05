@@ -14,6 +14,10 @@ require('js/stab.js');
 require('js/enemy.js');
 
 
+ var localEnemies = [];
+ 
+
+
 function Game(context, manifestPath) {
 	this._load(context, manifestPath);
 }

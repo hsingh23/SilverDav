@@ -11,7 +11,6 @@
  
  //Global reference to the game object for debugging
  var game = null;
- 
 /**
  * Begins the execution of the game.
  * Should be called on the 'onload' event for the <body>

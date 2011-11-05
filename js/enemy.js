@@ -23,6 +23,8 @@ function Enemy() {
 	Enemy.intelligence = JsonNode.info[name].statistics.intelligence;
 	Enemy.stamina = JsonNode.info[name].statistics.stamina;
 	
+	localEnemies.push(this);
+	
 	return this;
 }
 
