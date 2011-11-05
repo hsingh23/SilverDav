@@ -1,7 +1,7 @@
 {
 	"tileset": "tiles",
 	"grid": [[31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31],
-			 [37,37,37,37,42,37,37,37,42,37,37,37,42,37,42,37,37,37],	
+			 [42,37,42,37,42,37,37,37,42,37,37,37,42,37,42,37,37,37],	
 			 [45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45],
 			 [45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45],
 			 [45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45],
@@ -57,6 +57,8 @@
 		"subway-zone1": {"row": 1, "column":  8, "targetMap": "zone 1", "targetWarp": "zone1-subway"},
 		"subway1-subway2": {"row": 1, "column": 12, "targetMap": "subway1", "targetWarp": "subway2-subway1"},
 		"subway2-subway1": {"row": 1, "column": 14, "targetMap": "subway1", "targetWarp": "subway1-subway2"},
-		"subway-forestZone": {"row": 1, "column": 4, "targetMap": "forestZone", "targetWarp": "forestZone-subway"}
+		"subway-forestZone": {"row": 1, "column": 4, "targetMap": "forestZone", "targetWarp": "forestZone-subway"},
+		"subway-evilZone": {"row": 1, "column": 2, "targetMap": "evilZone", "targetWarp": "evilZone-subway"},
+		"subway-dystopianZone": {"row": 1, "column": 0, "targetMap": "dystopianZone", "targetWarp": "dystopianZone-subway"}
 	}
 }
