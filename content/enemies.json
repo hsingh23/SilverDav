@@ -1,0 +1,30 @@
+{
+	"enemies":
+	[
+		{
+			"name":"wolf",
+			"statistics":
+			{
+				"speed":3,
+				"strength":2,
+				"dexterity":4,
+				"intelligence":1,
+				"stamina":2,
+			},
+		},
+		
+		{
+			"name":"bear",
+			"statistics":
+			{
+				"speed":1,
+				"strength":4,
+				"dexterity":5,
+				"intelligence":1,
+				"stamina":1,
+			},
+		}
+	
+	
+	]
+}

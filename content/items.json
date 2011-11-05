@@ -1,0 +1,24 @@
+{
+	"items":
+	[
+		{
+			"name":"wooden sword",
+			"statistics":
+			{
+				"damage":1,
+				"armor":0,
+			},
+		},
+		
+		{
+			"name":"leather vest",
+			"statistics":
+			{
+				"damage":0,
+				"armor":1,
+			},
+		}
+	
+	
+	]
+}
