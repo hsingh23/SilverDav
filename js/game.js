@@ -8,6 +8,7 @@
  */
 // You can require your files here.
 require('js/guy.js');
+require('js/stab.js');
 
 function Game(context, manifestPath) {
 	this._load(context, manifestPath);

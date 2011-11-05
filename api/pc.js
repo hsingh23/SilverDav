@@ -9,13 +9,20 @@
  *
  * Modify or use as a template for your own player character.
  */
+require('js/stab.js');
+
+sta=Object();
 function PC(descriptor, map, cellSize, loader, input, output) {
 	this.input = input;
 	this.setup(descriptor, map, cellSize, loader, output);
+	sta = new stab({"sprite": "beamSword", "position": {x:12, y:13}}, map, cellSize, loader);
 }
 
 PC.prototype = new Entity();
 PC.prototype.input = null;
+
+
+
 
 PC.prototype._updateBase = PC.prototype.update;
 /**
