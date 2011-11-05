@@ -58,7 +58,7 @@ PC.prototype.update = function updatePC(elapsedTime) {
 		this.move(this.DIRECTION.RIGHT, 'walk', true);
 	}
 else if (this.input.isKeyDown(KEY[4]) || this.input.isButtonDown(this.input.BUTTON.RIGHT)) {
-		this.move(this.DIRECTION.RIGHT, 'walk', true);
+		PC.prototype.delete;
 		console.log("log is working");
 	}
 	
@@ -99,7 +99,7 @@ PC.prototype.use = function use() {
 	if(this.facing === this.DIRECTION.NONE) {
 		return;
 	}
- console.log("use is being called 2");
+ console.log("use is being called0 2");
 	front.x = Math.round(this.location.point.x);
 	front.y = Math.round(this.location.point.y);
 	front[this.facing.axis] += this.facing.sign;
