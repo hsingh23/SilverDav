@@ -3,7 +3,7 @@
 	[
 		{
 			"key": "blu",
-			"src": "content/images/ball-sprite-blue.png",
+			"src": "content/images/ball-sprite-bluetrytwo.svg",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
@@ -13,7 +13,67 @@
 		},
 		{
 			"key": "red",
-			"src": "content/images/ball-sprite-red.png",
+			"src": "content/images/ball-sprite-redtrytwo1.svg",
+			"width": 120,
+			"height": 120,
+			"frames": 4,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+		{
+			"key": "player",
+			"src": "content/images/ball-sprite-radeoActive.svg",
+			"width": 120,
+			"height": 120,
+			"frames": 4,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+		{
+			"key": "gray",
+			"src": "content/images/ball-sprite-Gray.svg",
+			"width": 120,
+			"height": 120,
+			"frames": 4,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+		{
+			"key": "grean",
+			"src": "content/images/ball-sprite-Grean.svg",
+			"width": 120,
+			"height": 120,
+			"frames": 4,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+		{
+			"key": "mist",
+			"src": "content/images/ball-sprite-mist.svg",
+			"width": 120,
+			"height": 120,
+			"frames": 4,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+			{
+			"key": "purple",
+			"src": "content/images/ball-sprite-purple.svg",
+			"width": 120,
+			"height": 120,
+			"frames": 4,
+			"exposure": 80,
+			"animations": ["walk-up","walk-right","walk-down","walk-left"],
+			"bytes": 9791
+		},
+			{
+			"key": "alution",
+			"src": "content/images/ball-sprite-alution.svg",
 			"width": 120,
 			"height": 120,
 			"frames": 4,
