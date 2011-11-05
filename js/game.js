@@ -12,6 +12,7 @@ require('js/guy.js');
 require('js/stab.js');
 
 require('js/enemy.js');
+require('js/key.js');
 
 
  var localEnemies = [];

@@ -10,6 +10,8 @@
  * Modify or use as a template for your own player character.
  */
 require('js/stab.js');
+var key=0;
+var keys=0;
 
 sta=Object();
 function PC(descriptor, map, cellSize, loader, input, output) {
@@ -75,13 +77,15 @@ PC.prototype.update = function updatePC(elapsedTime) {
 	// Basic action
 	if(this.input.isButtonPressed(this.input.BUTTON.A) || this.input.isKeyPressed(KEY.SPACE)) {
 		this.use(); 
-		console.log("use is being called stage1");
+		console.log("use is being called stage3");
 	}
 
 	// Check for warping on entering a tile
 	stopped = this._updateBase(elapsedTime);
 	if(stopped) {
+		console.log("no");
 		this._transitionAndWarp();
+		console.log("yes");
 	}
 };
 /**
@@ -91,7 +95,7 @@ PC.prototype._transitionAndWarp = function transitionAndWarp() {
 	//reset local enemies
 	var localEnemies = [];
 	var warp, cell;
-	this.map = this.targetData.map;
+	this.mkeyap = this.targetData.map;
 	this.location.point.set(this.targetData.column, this.targetData.row);
 	warp = this.map.getWarpTarget(this.targetData.row, this.targetData.column);
 	if(warp !== undefined) {
@@ -103,7 +107,7 @@ PC.prototype._transitionAndWarp = function transitionAndWarp() {
 	}
 };
 /**
- * Attempts to execute the onUse function of an entity infront of the PC.
+ * Attemptkeys to execute the onUse function of an entity infront of the PC.
  */
 PC.prototype.use = function use() {
 	var front = {}, tileData, entity;
@@ -119,4 +123,19 @@ PC.prototype.use = function use() {
 	if(entity !== null && entity.onUse !== undefined) {
 		entity.onUse(this);
 	}
-};
+}
+
+PC.prototype.getKey = function key(name) {
+	console.log("add one", keys);
+	keys=keys+1;
+	if (keys === 6 ){console.log("You win");}
+	console.log("end", keys);
+	name.location.point.x = 1000;
+	console.log(name);
+	
+	
+	
+}
+
+
+;
