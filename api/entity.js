@@ -121,7 +121,7 @@ Entity.prototype = {
 
 		//don't move
 		if (direction === this.DIRECTION.NONE) { return; }
-
+   this.facing =direction;
 		this.sprite.playAnimation(mode + direction.name, false, true);
 		this.sprite.stopAnimation(true);
 
