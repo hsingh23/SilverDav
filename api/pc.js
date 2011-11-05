@@ -12,6 +12,8 @@
 require('js/stab.js');
 var key=0;
 var keys=0;
+var old=0;
+var oldm=null;
 
 sta=Object();
 function PC(descriptor, map, cellSize, loader, input, output) {
@@ -39,6 +41,7 @@ PC.prototype.update = function updatePC(elapsedTime) {
 
 	
 	if(this.input.isKeyDown(KEY.W) || this.input.isButtonDown(this.input.BUTTON.UP)) {
+var keys=0;
 
 		this.move(this.DIRECTION.UP, 'walk', true);
 	} else if(this.input.isKeyDown(KEY.S) || this.input.isButtonDown(this.input.BUTTON.DOWN)) {
@@ -128,14 +131,21 @@ PC.prototype.use = function use() {
 PC.prototype.getKey = function key(name) {
 	console.log("add one", keys);
 	keys=keys+1;
-	if (keys === 6 ){console.log("You win");}
+	if (keys === 6 ){if (oldm!==null){oldm.location.point.x = 1000;}}
 	console.log("end", keys);
 	name.location.point.x = 1000;
+	
 	console.log(name);
 	
 	
 	
-}
+};
+PC.prototype.getold = function old(name) {
+	
+	if (keys === 6 ){name.location.point.x = 1000;name.output.setMessage(["'You have all the keys. You may go on!"]);}
+	oldm=name;
+	console.log("end", keys);
+	
+	console.log(name);
 
-
-;
+};
