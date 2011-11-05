@@ -64,6 +64,6 @@
 	],
 	"warps":
 	{
-		"evilZone-subway": {"row":46, "column": 1, "targetMap": "subway1", "targetWarp": "subway-evilZone"}
+		"evilZone-subway": {"row": 46, "column": 1, "targetMap": "subway1", "targetWarp": "subway-evilZone"}
 	}
 }
