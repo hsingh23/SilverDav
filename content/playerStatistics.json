@@ -1,0 +1,19 @@
+{
+	"name":"CHARLIE",
+	"status":
+	{
+		"experience":0,
+		"level":1,
+	}
+	"statistics":
+	{
+		"speed":1,
+		"strength":1,
+		"dexterity":1,
+		"intelligence":1,
+		"stamina":1,
+		"stamina":1,
+	},
+
+	"zone":0
+}

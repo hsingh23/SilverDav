@@ -1,0 +1,34 @@
+{
+	"enemies":
+	[
+		{
+			"name":"wolf",
+			"imageURL":".../wolf.svg",
+			"attack":"punch",
+			"statistics":
+			{
+				"speed":3,
+				"strength":2,
+				"dexterity":4,
+				"intelligence":1,
+				"stamina":2,
+			},
+		},
+		
+		{
+			"name":"bear",
+			"imageURL":".../bear.svg",
+			"attack":"punch",
+			"statistics":
+			{
+				"speed":1,
+				"strength":4,
+				"dexterity":5,
+				"intelligence":1,
+				"stamina":1,
+			},
+		}
+	
+	
+	]
+}
