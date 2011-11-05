@@ -1,7 +1,7 @@
 {
 	"tileset": "tiles",
 	"grid": [[31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31],
-			 [37,37,37,37,37,37,37,37,42,37,37,37,37,37,37,37,37,37],	
+			 [37,37,37,37,37,37,37,37,42,37,42,37,42,37,42,37,37,37],	
 			 [45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45],
 			 [45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45],
 			 [45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45],
@@ -22,6 +22,9 @@
 	"tileType": {"walk": [0,1,6,7,8,9,10,11,15,16,17,21,22,23,45,47]},
 	"warps":
 	{
-		"door": {"row": 1, "column": 8, "targetMap": "zone 1", "targetWarp": "building"}
+		"subway-zone1": {"row": 1, "column":  8, "targetMap": "zone 1", "targetWarp": "zone1-subway"},
+		"subway-zone2": {"row": 1, "column": 10, "targetMap": "zone 2", "targetWarp": "zone2-subway"},
+		"subway1-subway2": {"row": 1, "column": 12, "targetMap": "building 1", "targetWarp": "subway2-subway1"},
+		"subway2-subway1": {"row": 1, "column": 14, "targetMap": "building 1", "targetWarp": "subway1-subway2"}
 	}
 }
