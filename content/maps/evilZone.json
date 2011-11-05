@@ -54,9 +54,16 @@
 	"tileType": {"walk": [33,50,215,217,218,216,231,232,233,234,248,289,250]},
 	"entities":
 	[
+	{"type": "Entity",
+			"sprite": "graykey",
+			"position": {"x": 2, "y": 4},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [false, "none", true, true],
+			"onUse": "function talk(user) {this.output.setMessage([\"'You find the great gray key:\",\"you pick it up and put it you pocket'\",\"Press the spacebar to continue...'\"]); PC.prototype.getKey(this);}"
+	  }
 	],
 	"warps":
 	{
-		"evilZone-subway": {"row": 3, "column": 2, "targetMap": "subway1", "targetWarp": "subway-evilZone"}
+		"evilZone-subway": {"row":46, "column": 1, "targetMap": "subway1", "targetWarp": "subway-evilZone"}
 	}
 }

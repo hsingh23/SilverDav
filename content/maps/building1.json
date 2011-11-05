@@ -11,6 +11,16 @@
 			 [ 5, 5, 5, 5, 5, 5]],
 	"adjacency": [null, null, null, null],
 	"tileType": {"walk": [0,1,6,7,8,9,10,11,15,16,17,21,22,23,45,47]},
+	"entities":
+	[
+	  {"type": "Entity",
+			"sprite": "pingPong",
+			"position": {"x": 3, "y": 20},
+			"dimensions": {"width": 1, "height": 1},
+			"animation": [false, "none", true, true],
+			"onUse": "function talk(user) {this.output.setMessage([\"'YOU WIINNN'\"]);}"
+	  }
+	],
 	"warps":
 	{
 		"win-subway": {"row": 4, "column": 3, "targetMap": "subway", "targetWarp": "subway-win"}
