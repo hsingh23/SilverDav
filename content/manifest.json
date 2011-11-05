@@ -374,6 +374,10 @@
 			"key": "dystopianZone",
 			"src": "content/maps/dystopianZone.json",
 			"bytes": 746
+		}, {
+			"key": "winRoom",
+			"src": "content/maps/building1.json",
+			"bytes": 746
 		}
 	]
 }
