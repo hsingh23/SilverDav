@@ -80,7 +80,8 @@ Game.prototype = {
 	    this.input.registerKey(KEY[1]);
 	    this.input.registerKey(KEY[2]);
 	    this.input.registerKey(KEY[3]);
-	   
+	     this.input.registerKey(KEY[4]);
+	     
 		this._registerButtons();
 		
 		// size of a cell for the viewport

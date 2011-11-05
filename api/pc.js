@@ -57,7 +57,9 @@ PC.prototype.update = function updatePC(elapsedTime) {
 	else if (this.input.isKeyDown(KEY[3]) || this.input.isButtonDown(this.input.BUTTON.RIGHT)) {
 		this.move(this.DIRECTION.RIGHT, 'walk', true);
 	}
-
+else if (this.input.isKeyDown(KEY[4]) || this.input.isButtonDown(this.input.BUTTON.RIGHT)) {
+		this.move(this.DIRECTION.RIGHT, 'walk', true);
+	}
 	
 
 	// Basic action
