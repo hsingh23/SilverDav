@@ -95,7 +95,12 @@ Entity.prototype = {
 			metric = new Rectangle(0, 0, this.location.size.width * this.cellSize.width, this.location.size.height * this.cellSize.height);
 			this.sprite = new Sprite(spriteSheet, metric);
 			this.speed = 1 / (spriteSheet.frames * spriteSheet.exposure);
-
+			
+			
+			//0 - 
+			//1 - animation
+			//2 - 
+			//3 - 
 			if(descriptor.hasOwnProperty('animation')) {
 				this.sprite.playAnimation(descriptor.animation[1], descriptor.animation[2], descriptor.animation[3]);
 				if(!descriptor.animation[0]) {

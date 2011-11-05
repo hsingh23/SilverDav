@@ -246,6 +246,36 @@
 			"key": "subway2",
 			"src": "content/maps/subway2.json",
 			"bytes": 746
+		},
+		{
+			"key": "fireZone",
+			"src": "content/maps/fireZone.json",
+			"bytes": 746
+		},
+		{
+			"key": "forestZone",
+			"src": "content/maps/forestZone.json",
+			"bytes": 746
+		},
+		{
+			"key": "islandZone",
+			"src": "content/maps/islandZone.json",
+			"bytes": 746
+		},
+		{
+			"key": "evilZone",
+			"src": "content/maps/evilZone.json",
+			"bytes": 746
+		},
+		{
+			"key": "egyptZone",
+			"src": "content/maps/egyptZone.json",
+			"bytes": 746
+		},
+		{
+			"key": "dystopianZone",
+			"src": "content/maps/dystopianZone.json",
+			"bytes": 746
 		}
 	]
 }
