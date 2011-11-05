@@ -211,7 +211,7 @@
 		},
 		{
 			"key": "Etiles",
-			"src": "content/images/tileset.png",
+			"src": "content/images/eAndMOre.png",
 			"width": 210,
 			"height": 210,
 			"tiles": [[ 0, 1, 4, 7, 9, 10,13],
