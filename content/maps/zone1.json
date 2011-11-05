@@ -46,7 +46,7 @@
 			"position": {"x": 17, "y": 10},
 			"dimensions": {"width": 1, "height": 1},
 			"animation": [false, "none", true, true],
-			"onUse": "function talk(user) {this.output.setMessage([\"'You find the great grean key:\",\"you pick it up and put it you pocket'\",\"Press the spacebar to continue...'\"]); PC.prototype.getKey(this);}"
+			"onUse": "function talk(user) {this.output.setMessage([\"'You find the great green key:\",\"you pick it up and put it you pocket'\",\"Press the spacebar to continue...'\"]); PC.prototype.getKey(this);}"
 		},
 		
 		{
